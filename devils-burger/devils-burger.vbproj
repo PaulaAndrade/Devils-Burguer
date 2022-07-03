@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5B5DD57-6989-43E5-96DA-E84651CAF219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>devils_burger.My.MyApplication</StartupObject>
+    <RootNamespace>devils_burger</RootNamespace>
+    <AssemblyName>devils-burger</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>devils-burger.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>devils-burger.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>login.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="busca_cpf.designer.vb">
+      <DependentUpon>busca_cpf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="busca_cpf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro de Clientes.designer.vb">
+      <DependentUpon>Cadastro de Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro de Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="devils_burger_ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>devils_burger_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="devils_burger_ds.vb">
+      <DependentUpon>devils_burger_ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ficha_funcionario.designer.vb">
+      <DependentUpon>ficha_funcionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ficha_funcionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_alterar_acesso.Designer.vb">
+      <DependentUpon>form_alterar_acesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_alterar_acesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_cozinheiro.Designer.vb">
+      <DependentUpon>form_cozinheiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_cozinheiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_gerente.Designer.vb">
+      <DependentUpon>form_gerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_gerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_login.Designer.vb">
+      <DependentUpon>form_login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_mesas.Designer.vb">
+      <DependentUpon>form_mesas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_mesas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_pedido.Designer.vb">
+      <DependentUpon>form_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_pedido_info.Designer.vb">
+      <DependentUpon>form_pedido_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_pedido_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_relat_cardapio.Designer.vb">
+      <DependentUpon>form_relat_cardapio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_relat_cardapio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_relat_clientes.Designer.vb">
+      <DependentUpon>form_relat_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_relat_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_relat_pedidos.Designer.vb">
+      <DependentUpon>form_relat_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="form_relat_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funcoes_gerais.vb" />
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Primeiro_acesso.designer.vb">
+      <DependentUpon>Primeiro_acesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Primeiro_acesso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash_screen.Designer.vb">
+      <DependentUpon>splash_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="busca_cpf.resx">
+      <DependentUpon>busca_cpf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro de Clientes.resx">
+      <DependentUpon>Cadastro de Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ficha_funcionario.resx">
+      <DependentUpon>ficha_funcionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_alterar_acesso.resx">
+      <DependentUpon>form_alterar_acesso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_cozinheiro.resx">
+      <DependentUpon>form_cozinheiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_gerente.resx">
+      <DependentUpon>form_gerente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_login.resx">
+      <DependentUpon>form_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_mesas.resx">
+      <DependentUpon>form_mesas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_pedido.resx">
+      <DependentUpon>form_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_pedido_info.resx">
+      <DependentUpon>form_pedido_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_relat_cardapio.resx">
+      <DependentUpon>form_relat_cardapio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_relat_clientes.resx">
+      <DependentUpon>form_relat_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_relat_pedidos.resx">
+      <DependentUpon>form_relat_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Primeiro_acesso.resx">
+      <DependentUpon>Primeiro_acesso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_pedidos.rdlc" />
+    <EmbeddedResource Include="report_cardapio.rdlc" />
+    <EmbeddedResource Include="report_clientes.rdlc" />
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="devils_burger_ds.xsc">
+      <DependentUpon>devils_burger_ds.xsd</DependentUpon>
+    </None>
+    <None Include="devils_burger_ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>devils_burger_ds.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="devils_burger_ds.xss">
+      <DependentUpon>devils_burger_ds.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="login.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
